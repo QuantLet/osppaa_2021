@@ -1,0 +1,93 @@
+modelling:
+     finaldatapath: ../../archive/final_data/
+     resultspath: ../09_results/
+     strong_trunc: 5
+     mid_trunc: 10
+     weak_trunc: 9999999
+     low_mcap: 5000000
+     low_vol: 50000
+     high_mcap: 100000000 
+     high_vol: 50000000
+     mid_mcap: 10000000
+     mid_vol: 1000000
+     
+yfinance:
+     obj_name: data_yfinance
+     path: ../../archive/marketdata_yfinance/
+
+crix:
+     loadname: crix
+     loadpath: ../../archive/marketdata_crix/
+     savepath: ../../archive/marketdata_crix/
+     savename: crix
+     
+cg_data_gen:
+     path_to_save: ../../archive/marketdata_coingecko/
+     filename: data_coingecko
+     mkt_cap_thresh: 0
+     full_request_number: 6000
+     answers_per_page: 250
+     timestamp_from: 1546387199
+     timestamp_to: 1606922707
+     stablecoin_ids: tether, tether-gold, perth-mint-gold-token, gold-bcr, sdusd, stasis-eurs, gemini-dollar, dai, aave-tusd, digitalusd, neutrino, musd, stableusd, true-usd, etoro-euro, equilibrium-eosdt, digix-gold, pax-gold, binance-usd, nusd, usdk, usd-coin, husd, usdq, paxos-standard, binance-gbp, bitCNY, etoro-new-zealand-dollar
+#usdx
+bw_data_gen:
+     frequency: 1d
+     passfile: ~/APIKEYS/blockwatch.txt
+     pairs: BTC_USD,LTC_USD,BTG_USD
+     start_date: 2019-01-01
+     end_date: 2020-01-01
+     bw_data_path: ../../archive/marketdata_blockwatch/
+     bw_databases: BITFINEX:OHLCV/,BTC-EOD/ACTIVITY,BTC-EOD/AGE,BTC-EOD/BALANCE,BTC-EOD/SUPPLY,BTC-EOD/TX,BTC-EOD/UTXO,LTC-EOD/ACTIVITY,LTC-EOD/AGE,LTC-EOD/BALANCE,LTC-EOD/SUPPLY,LTC-EOD/TX,LTC-EOD/UTXO,BTG-EOD/ACTIVITY,BTG-EOD/AGE,BTG-EOD/BALANCE,BTG-EOD/SUPPLY,BTG-EOD/TX,BTG-EOD/UTXO
+     
+descriptives:
+     exog_pure: V_fv,V_trend_prices_st_3,csupply,vola_btc
+     exog_sq: V_fv_p2,V_trend_prices_st_3_p2
+     exog_qube: V_fv_p3,V_trend_prices_st_3_p3
+     endog: ret_lead
+
+dataloading:
+     min_mcap_threshold: 1000000
+     min_vol_threshold: 25000
+     min_rows_threshold: 100
+     source_of_stablecoin_ids: cg_data_gen 
+     price_var: prices
+     vol_var: total_volumes
+     na_cleaning_heads_and_tails_threshold: 365
+     na_cleaning_heads_and_tails_ignorecols: see_script 
+     max_na_threshold: 100
+     outlier_threshold_for_zscore: 5
+     outlier_cols_to_be_treated: see_script
+     path_to_save: ../../archive/final_data/
+     filename: inputdata_test
+     volatility_sd_windowlength: 10
+     volatility_sd_minobs: 3
+     volatility_ratio_wlength_st: 7
+     volatility_ratio_wlength_lt: 93
+     volatility_ratio_wlength_minobs: 93
+     volume_ratio_wlength_st: 7
+     volume_ratio_wlength_lt: 93
+     volume_ratio_wlength_minobs: 93
+     trend_longterm_windowlength: 31
+     trend_longterm_periodization_multiplier: 31
+     trend_longterm_ols_minobs: 20
+     trend_shortterm_windowlength: 10
+     trend_shortterm_scaling: 0.25
+     trend_shortterm_minobs: 3
+     fvalue_lineartrend_windowlength: 365
+     fvalue_lineartrend_ols_minobs: 200
+     fvalue_anchor_anchortyp: lma
+     fvalue_anchor_wa_wlength: 365
+     fvalue_anchor_minobs: 200
+     fvalue_anchor_emwa_halflife: 150
+     fvalue_choice_stabcoins: V_fact_fval_coll
+     fvalue_choice_tradcoins: V_fvalue_lwa_30
+     resistance_window_prd1_start: 63
+     resistance_window_prd1_end: 16
+     resistance_window_prd2_start: 15
+     resistance_window_prd2_end: 10
+     resistance_sensitivity: 0.85
+     volume_windowlength: 10
+     volume_scalingvar: 0.25     
+     volume_minobs: 3     
+     market_raw_data_dir: ../../archive/marketdata_coingecko/
