@@ -4,7 +4,7 @@ Published in: 'On Stablecoin Price Processes and Arbitrage (Pernice, 2021)'
 
 Description: "The Quantlet is used to check and confirm several important assumptions (no multicollinearity, no omitted variable bias, no measurement error, and no unit roots) that are necessary for the robustness of the panel data model. It saves the results of the multicollinearity and unit root tests in LaTeX tables for further use."
 
-Keywords: Unit Root Tests, Multicollinearity Tests, VIF
+Keywords: Unit Root Tests, Multicollinearity Tests, VIF, cryptocurrency, pricing
 
 Author: Ingolf Pernice
 

@@ -4,7 +4,7 @@ Published in: 'On Stablecoin Price Processes and Arbitrage (Pernice, 2021)'
 
 Description: "The Quantlet generates 3D perspective plots for two different mathematical models that describe the relationship between short term and long term trends and returns. It does so by defining the trends_ST_LT function twice with different equations, creating sequences of numbers to use as coordinates, calculating a matrix of returns, and then creating and saving the 3D perspective plots as LaTeX files."
 
-Keywords: 3D Plot, Trends, Peg-Deviations
+Keywords: 3D Plot, Trends, Peg-Deviations, cryptocurrency, pricing
 
 Author: Ingolf Pernice
 

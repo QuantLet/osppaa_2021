@@ -4,7 +4,7 @@ Published in: 'On Stablecoin Price Processes and Arbitrage (Pernice, 2021)'
 
 Description: "The Quantlet is primarily focused on loading previously saved models and preparing robust standard errors for those models to then produce a table of results. Initially, it loads three models saved in previous steps. It then calculates the robust standard errors for each of these models using the 'sandwich' package. Finally, it uses the 'stargazer' package to create a table that includes the estimated coefficients from the models along with the robust standard errors. This table is saved in a .tex format for later use. "
 
-Keywords: Robust Standard Errors, Stargazer, Latex
+Keywords: Robust Standard Errors, Stargazer, Latex, cryptocurrency, prices
 
 Author: Ingolf Pernice
 

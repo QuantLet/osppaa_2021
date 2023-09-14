@@ -4,7 +4,7 @@ Published in: 'On Stablecoin Price Processes and Arbitrage (Pernice, 2021)'
 
 Description: "This Quantlet reads in a configuration file and a helper function, then retrieves the preprocessed data from a CSV file, and processes it according to various parameters specified in the configuration file. It then saves the processed data in different files, each corresponding to a different set of parameters (volume, market cap, and truncation level) specified in the configuration file. The final data sets are configured wrt. different parameter values for volume, market cap, and truncation level."
 
-Keywords: Truncation, Outlier Treatment, Preprocessing
+Keywords: Truncation, Outlier Treatment, Preprocessing, cryptocurrency, prices
 
 Author: Ingolf Pernice
 
