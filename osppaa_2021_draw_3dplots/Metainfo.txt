@@ -12,5 +12,5 @@ See also: other Quantlets in this project
 
 Submitted: 02.09.2023
 
-Datafile: - 
+Datafile: None
 
