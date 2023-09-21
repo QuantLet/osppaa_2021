@@ -2,7 +2,7 @@ Name of Quantlet: osppaa_2021_1fe_mt_mMCaV
 
 Published in: 'On Stablecoin Price Processes and Arbitrage (Pernice, 2021)'
 
-Description: "The Quantlet loads necessary data and packages, performs a fixed effects regression on normalized data, saves the model, and then performs various diagnostic tests on the residuals, such as checking for serial correlation, cross-sectional correlation, normal distribution, heteroskedasticity, and plotting autocorrelation functions for each level of 'coin' in the data."
+Description: "The Quantlet loads necessary data and packages, performs a fixed effects regression on normalized data, saves the model, and then performs various diagnostic tests on the residuals, such as checking for serial correlation, cross-sectional correlation, normal distribution, heteroskedasticity, and plotting autocorrelation functions for each level of 'coin' in the data. For plotting engine see Quantlet osppaa_2021_model_tables_to_latex."
 
 Keywords: Fixed Effects Estimation, Regression, Residual Diagnostics, Serial Correlation, Crosssectional Correlation, Normal Distribution, Heteroskedasticity, Autocorrelation Functions, plm, within model, individual effects
 
