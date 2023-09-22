@@ -1,4 +1,4 @@
-Name of Quantlet: osppaa_2021_draw_3dplots
+Name of Quantlet: osppaa_2021_draw_3dplots_wt
 
 Published in: 'On Stablecoin Price Processes and Arbitrage (Pernice, 2021)'
 
