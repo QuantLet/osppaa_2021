@@ -1,0 +1,19 @@
+modelling:
+     finaldatapath: ../osppaa_data/
+     resultspath: ./
+     strong_trunc: 1
+     mid_trunc: 2.5
+     weak_trunc: 10
+     low_mcap: 5000000
+     low_vol: 50000
+     high_mcap: 100000000 
+     high_vol: 50000000
+     mid_mcap: 10000000
+     mid_vol: 1000000
+
+descriptives:
+     exog_pure: V_fv,V_trend_prices_st_3,csupply,vola_btc
+     exog_sq: V_fv_p2,V_trend_prices_st_3_p2
+     exog_qube: V_fv_p3,V_trend_prices_st_3_p3
+     endog: ret_lead
+
